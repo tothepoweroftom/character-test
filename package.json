@@ -1,0 +1,22 @@
+{
+  "name": "fabricating-alternatives-004",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@tensorflow-models/universal-sentence-encoder": "1.1.1",
+    "@tensorflow/tfjs": "1.2.2",
+    "babel-polyfill": "^6.26.0",
+    "d3-scale-chromatic": "1.3.3",
+    "sentence-splitter": "^3.0.11"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

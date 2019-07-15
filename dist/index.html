@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TensorFlow.js Universal Sentence Encoder lite demo</title>
+  <style>h1 {
+      margin-bottom: 35px;
+    }
+
+    #main {
+      padding-top: 30px;
+      font-family: Helvetica, sans-serif;
+      max-width: 960px;
+      min-width: 600px;
+      width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #sentences-container {
+      margin: 120px;
+    min-width: 50%;
+    flex: 2 1 auto;    }
+
+    #sentences-container>div {
+      margin-bottom: 10px;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #self-similarity-matrix {
+      position: relative;
+    }
+
+    .labels {
+      position: absolute;
+    }
+
+    .x-axis {
+      bottom: 100%;
+      width: 100%;
+      height: 20px;
+    }
+
+    .x-axis>div {
+      transform: translateX(-50%);
+    }
+
+    .y-axis {
+      right: 100%;
+      height: 100%;
+      width: 20px;
+    }
+
+    .y-axis>div {
+      transform: translateY(-50%);
+    }
+
+    .labels>div {
+      position: absolute;
+    }
+
+    #description {
+      margin-bottom: 50px;
+      line-height: 1.6;
+    }</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="main">
+    <h1>Universal Sentence Encoder Fabricating Alternatives</h1>
+
+    <div id="loading">
+      Loading the model...
+    </div>
+
+
+
+
+    <div id="container">
+      <div id="values">
+        <form>
+          <h1>Character Values</h1>
+          Copy and paste a text describing them:<br>
+          <textarea name="message" id="characterValues" rows="20" cols="30">I’M VITOR FREIRE, A CHOREOGRAPHER OF HUMAN INTERACTION. I CREATE CONTENT, STRATEGIES, AND EXPERIENCES THAT CAN REVEAL OR UNLOCK NEW POSSIBILITIES FOR OUR LIVES. I LIKE WORDS, EVEN WHEN THEY DRESS LIKE IMAGES. I USE STORIES, DESIGN, AND TECHNOLOGY, BUT MY BEST ASSET IS STILL MY CURIOSITY. I LIVE IN THIS INTERSECTION BETWEEN PLAY AND THE QUEST FOR RELEVANCE. HIDDEN IN ALL THE JOB TITLES I EVER HAD, THERE IS A MAGICIAN, A STORYTELLER, A DANCER.</textarea>
+        </form>
+        <button id="submit">Submit</button>
+
+        <h2 id="hasSubmitted"></h2>
+      </div>
+      <div id="sentences-container"></div>
+   
+    </div>
+
+
+    <div id="nowTest">
+      <h1>Now test a statement against the characters</h1>
+      <input type="text" id="test1" value="" placeholder="Enter a statement here">
+      <button id="statement">Add statement</button>
+
+      <h2 id="score"></h2>
+    </div>
+  </div>
+
+
+
+  <script src="/src.a2b27638.js"></script>
+</body>
+
+</html>
